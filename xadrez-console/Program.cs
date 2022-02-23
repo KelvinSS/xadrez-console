@@ -17,7 +17,9 @@ namespace xadrez_console
                 tab.colocarPeca(new Rei(tab, Cor.Preto), new Posicao(2, 4));
 
                 Tela.imprimirTebuleiro(tab);
-            }
+
+             }
+
             catch(TabuleiroException e)
             {
                 Console.WriteLine(e.Message);
