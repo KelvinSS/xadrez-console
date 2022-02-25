@@ -61,7 +61,7 @@ namespace xadrez_console
             int linha = int.Parse(s[1] + "");
             return new PosicaoXadrez(coluna, linha);
         }
-
+                 
         public static void imprimirPeca(Peca peca)
         {
             if (peca == null)
