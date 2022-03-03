@@ -16,7 +16,17 @@ namespace xadrez_console
             Console.WriteLine("Turno: " + partida.turno);
             if (!partida.terminada)
             {
-                Console.WriteLine("Aguardando jogada: " + partida.jogadorAtual);
+                if(partida.jogadorAtual == Cor.Preto)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Aguardando jogada: " + partida.jogadorAtual);
+                    Console.ResetColor();
+                }
+                else
+                {
+                    Console.WriteLine("Aguardando jogada: " + partida.jogadorAtual);
+                }
+
                 if (partida.xeque)
                 {
                     Console.WriteLine("Xeque!");
